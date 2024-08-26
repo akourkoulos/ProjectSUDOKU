@@ -26,3 +26,6 @@ The Sudoku solver uses a backtracking algorithm, implemented in C through the re
 If no valid number is found, the function backtracks, marking the position as unassigned and trying alternative numbers. The algorithm continues until the grid is completely filled (solved) or deemed unsolvable. Each successful placement increases the progress, which updates the LED indicators.
 
 ![alt text](https://github.com/akourkoulos/ProjectSUDOKU/blob/main/projectSUDOKU/Figures/SudokuSolver.png)
+
+check the C implementation: https://github.com/akourkoulos/ProjectSUDOKU/blob/main/projectSUDOKU/main.c
+check the pdf for more information (Greek): https://github.com/akourkoulos/ProjectSUDOKU/blob/main/
