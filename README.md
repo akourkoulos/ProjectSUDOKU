@@ -15,3 +15,7 @@ The microcontroller receives instructions from a serial port (UART). The instruc
 In the main function, PORTB is configured as an output, connecting it to the LEDs on the STK500 board. Consequently, the appropriate registers are set with the correct values, enabling compare interrupts for the Timer every 40 ms. During each timer interrupt, the necessary registers are pushed onto the stack. The global progress variable, which increments each time a new cell is solved by the Sudoku algorithm, controls the LEDs. For every ten units of progress, a corresponding LED is turned off, visually indicating the solving progress. After handling the interrupt, the registers are popped from the stack, and the program resumes from where it left off.
 
 ## Program flow 
+
+The block diagram below visualizes the entire program's flow. After initializing the necessary registers, the program enters an infinite loop where it waits for interrupts from either the Timer (for updating LEDs) or UART. Upon receiving an interrupt, the program executes the corresponding action. When a complete Sudoku puzzle is received and the play flag is enabled, the program triggers the Sudoku-solving algorithm.
+
+![alt text](https://github.com/akourkoulos/ProjectSUDOKU/blob/main/projectSUDOKU/Figures/program flow.png)
