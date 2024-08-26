@@ -19,3 +19,5 @@ In the main function, PORTB is configured as an output, connecting it to the LED
 The block diagram below visualizes the entire program's flow. After initializing the necessary registers, the program enters an infinite loop where it waits for interrupts from either the Timer (for updating LEDs) or UART. Upon receiving an interrupt, the program executes the corresponding action. When a complete Sudoku puzzle is received and the play flag is enabled, the program triggers the Sudoku-solving algorithm.
 
 ![alt text](https://github.com/akourkoulos/ProjectSUDOKU/blob/main/projectSUDOKU/Figures/program%20flow.png)
+
+## Backtracking Sudoku solving algorithm
