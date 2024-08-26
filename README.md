@@ -28,4 +28,4 @@ If no valid number is found, the function backtracks, marking the position as un
 ![alt text](https://github.com/akourkoulos/ProjectSUDOKU/blob/main/projectSUDOKU/Figures/SudokuSolver.png)
 
 check the C implementation: https://github.com/akourkoulos/ProjectSUDOKU/blob/main/projectSUDOKU/main.c
-check the pdf for more information (Greek): https://github.com/akourkoulos/ProjectSUDOKU/blob/main/
+check the pdf for more information (Greek): https://github.com/akourkoulos/ProjectSUDOKU/blob/main/Project%20proposal.pdf
