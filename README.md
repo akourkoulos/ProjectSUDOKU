@@ -9,3 +9,5 @@ using a Timer/Counter that triggers an interrupt every 40 ms. The entire codebas
 
 The microcontroller receives instructions from a serial port (UART). The instructions and the responses from the microcontroller are shown in the table:
 
+![alt text](https://github.com/akourkoulos/ProjectSUDOKU/blob/main/projectSUDOKU/Figures/Protocol.png)
+
