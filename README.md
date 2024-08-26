@@ -20,4 +20,9 @@ The block diagram below visualizes the entire program's flow. After initializing
 
 ![alt text](https://github.com/akourkoulos/ProjectSUDOKU/blob/main/projectSUDOKU/Figures/program%20flow.png)
 
-## Backtracking Sudoku solving algorithm
+## Sudoku solving algorithm
+
+The Sudoku solver uses a backtracking algorithm, implemented in C through the recursive SolveSudoku() function. It scans the grid to find unassigned positions (marked as 0) using FindUnassignedLocation() and tries placing numbers 1 through 9 in each spot. The isSafe() function checks if a number can be placed without violating Sudoku rules. If a valid number is found, it is assigned to the position, and the algorithm recurses to solve the next unassigned cell.
+If no valid number is found, the function backtracks, marking the position as unassigned and trying alternative numbers. The algorithm continues until the grid is completely filled (solved) or deemed unsolvable. Each successful placement increases the progress, which updates the LED indicators.
+
+![alt text](https://github.com/akourkoulos/ProjectSUDOKU/blob/main/projectSUDOKU/Figures/SudokuSolver.png)
